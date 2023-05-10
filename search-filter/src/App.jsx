@@ -8,6 +8,9 @@ function App() {
   const [query, setQuery] = useState(" ");
 
   // console.log(Users.filter(user=> user.first_name.toLowerCase().includes("ka")));
+   const search = (data) => {
+        return data.filter((item) => item.first_name.toLowerCase().includes(query));
+   }
   
   return (
     <div className='app'>
@@ -17,7 +20,7 @@ function App() {
             className='search' 
             onChange={(event) => setQuery(event.target.value)}
        />
-       <Table/>
+       <Table data={Users}/>
     </div>
   )
 }
