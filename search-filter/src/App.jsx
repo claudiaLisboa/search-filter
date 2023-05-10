@@ -1,5 +1,6 @@
 
-import './App.css'
+import './App.css';
+import { Users } from './users';
 
 function App() {
   
@@ -7,9 +8,10 @@ function App() {
     <div className='app'>
        <input type='text' placeholder='Search...' className='search' />
        <ul className='list'>
-        <li className='listItem'> Filo</li>
-        <li className='listItem'> Farofa</li>
-        <li className='listItem'> JoseAlves</li>
+        { Users.map((user) =>(
+           <li className='listItem'> { user.first_name }</li>
+        ))}
+       
        </ul>
     </div>
   )
