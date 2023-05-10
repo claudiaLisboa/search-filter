@@ -9,8 +9,11 @@ function App() {
 
   // console.log(Users.filter(user=> user.first_name.toLowerCase().includes("ka")));
    const search = (data) => {
-        return data.filter((item) => item.first_name.toLowerCase().includes(query));
-   }
+        return data.filter(
+          (item) => item.first_name.toLowerCase().includes(query) || 
+                    item.last_name.toLowerCase().includes(query)  || 
+                    item.email.toLowerCase().includes(query));
+   } 
   
   return (
     <div className='app'>
@@ -20,7 +23,7 @@ function App() {
             className='search' 
             onChange={(event) => setQuery(event.target.value)}
        />
-       <Table data={Users}/>
+       <Table data={search(Users)}/>
     </div>
   )
 }
