@@ -7,13 +7,16 @@ import Table from './Table';
 function App() {
   const [query, setQuery] = useState(" ");
 
-  // console.log(Users.filter(user=> user.first_name.toLowerCase().includes("ka")));
+
+   const propsUsers = ["first_name", "last_name", "email" ,"gender"];
+
+  console.log(Users[0]["email"]);
+
    const search = (data) => {
-        return data.filter(
-          (item) => item.first_name.toLowerCase().includes(query) || 
-                    item.last_name.toLowerCase().includes(query)  || 
-                    item.email.toLowerCase().includes(query));
-   } 
+        return data.filter((item) => 
+          propsUsers.some((propsUser)=> item[propsUser].toLowerCase().includes(query))
+  );
+  } ;
   
   return (
     <div className='app'>
