@@ -62,5 +62,53 @@ export const Users =[
         "gender":"Female",
 
     },
+    {
+        "id":9, 
+        "first_name": "Penelope",
+        "last_name":"McQuade",
+        "email": "pmc@gmail.com",
+        "gender":"Female",
+
+    },
+    {
+        "id": 10,
+        "first_name": "Phoebe",
+        "last_name":"Gagnon",
+        "email": "pgagnon@gmail.com",
+        "gender":"Female",
+
+    },
+    {
+        "id": 11,
+        "first_name": "Pascale",
+        "last_name":"Roy",
+        "email": "proy@gmail.com",
+        "gender":"Female",
+
+    },
+    {
+        "id": 12,
+        "first_name": "Pamela",
+        "last_name":"Côté",
+        "email": "pCôté@gmail.com",
+        "gender":"Female",
+
+    },
+    {
+        "id": 13,
+        "first_name": "Pya",
+        "last_name":"Tremblay",
+        "email": "ptremblay@gmail.com",
+        "gender":"Female",
+
+    },
+    {
+        "id": 14,
+        "first_name": "Priscilla",
+        "last_name":"Labelle",
+        "email": "plabelle@gmail.com",
+        "gender":"Female",
+
+    }
 
 ]
