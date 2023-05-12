@@ -11,7 +11,14 @@
     text-align: center;
     /* font-size: 34px; */
 }
-
+img{
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  margin:10px;
+  display: flex;
+  /* align-items: start; */
+}
 body{
    
     background-color:rgb(242, 239, 217);
