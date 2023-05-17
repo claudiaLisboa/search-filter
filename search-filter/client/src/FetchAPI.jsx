@@ -11,8 +11,8 @@ class FetchAPI extends Component{
     
     callAPI() {
         fetch('http://localhost:9000/users')
-            .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res }))
+            .then(response => response.text())
+            .then(response => this.setState({ apiResponse: response }))
             .catch(err => err);
     }
     

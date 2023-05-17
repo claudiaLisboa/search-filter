@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
-    res.send('A API está funcionando corretamente');
+router.get('/', function(request, response, next) {
+    response.send('VAI CAGAR NO MATO - A API está funcionando corretamente');
 });
 
 module.exports = router;
